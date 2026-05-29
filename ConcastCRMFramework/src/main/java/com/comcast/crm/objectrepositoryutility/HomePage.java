@@ -16,10 +16,10 @@ public class HomePage {
 	}
 
 	@FindBy (linkText="Products")
-	private WebElement productLink;
+	private WebElement productLinks;
 	
 	public WebElement getproductLink() {
-		return productLink;
+		return productLinks;
 		
 	}
 	
