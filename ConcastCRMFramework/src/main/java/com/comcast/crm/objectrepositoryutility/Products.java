@@ -9,7 +9,7 @@ public class Products {
 	private WebElement createproductImgBtn;
 	
 	@FindBy (name="searchBtn")
-	private WebElement ele3;
+	private WebElement Elements3;
 	
 
 }
