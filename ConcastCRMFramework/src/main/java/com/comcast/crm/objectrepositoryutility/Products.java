@@ -8,6 +8,10 @@ public class Products {
 	@FindBy (xpath= "//img[@alt='Create Product...']")
 	private WebElement createproductImgBtn;
 	
+	@FindBy (name="search")
+	private WebElement element2;
+	
+	
 	
 
 }
