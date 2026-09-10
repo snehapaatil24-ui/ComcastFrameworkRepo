@@ -1,4 +1,4 @@
-package com.comcast.crm.listener;
+   package com.comcast.crm.listener;
 
 import java.util.Date;
 
@@ -76,14 +76,14 @@ public class ListImpClass implements ITestListener, ISuiteListener {
 		test.addScreenCaptureFromBase64String(filepath, testName + "_" + time);
 
 		/*
-		 * TakesScreenshot ts = (TakesScreenshot)BaseClass.driver1; File src
-		 * =ts.getScreenshotAs(OutputType.FILE);
+		 * TakesScreenshot ts = (TakesScreenshot)BaseClass.driver1;
+		 *  File src =ts.getScreenshotAs(OutputType.FILE);
 		 */
 
 		/*
 		 * File dest = new File("./configAppData/+testName+"+"+time+".png");
 		 * 
-		 * try { FileHandler.copy(src, dest); } catch (IOException e) { // TODO
+		 try { FileHandler.copy(src, dest); } catch (IOException e) { // TODO
 		 * Auto-generated catch block e.printStackTrace();}
 		 */
 	}

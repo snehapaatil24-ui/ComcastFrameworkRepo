@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="TestRunner-Chrome(failed)">
+    <parameter name="Browser" value="Chrome"/>
     <classes>
       <class name="com.comcast.crm.ContactTest1.CreateContactTestwithTestNG">
         <methods>
@@ -9,8 +10,6 @@
           <include name="configBS"/>
           <include name="configAC"/>
           <include name="configAS"/>
-          <include name="createContactTest"/>
-          <include name="CreateContactWithOrgTest"/>
           <include name="configBM"/>
           <include name="createContactwithDate"/>
           <include name="configAM"/>
@@ -22,13 +21,11 @@
           <include name="configBS"/>
           <include name="configAC"/>
           <include name="configAS"/>
-          <include name="createOrgTest"/>
           <include name="createOrgwithIndus"/>
           <include name="configBM"/>
-          <include name="createOrgWithPhoneNumberTest"/>
           <include name="configAM"/>
         </methods>
       </class> <!-- com.comcast.crm.OrgTest1.CreateOrgwithTestNGTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- TestRunner-Chrome(failed) -->
 </suite> <!-- Failed suite [Suite] -->

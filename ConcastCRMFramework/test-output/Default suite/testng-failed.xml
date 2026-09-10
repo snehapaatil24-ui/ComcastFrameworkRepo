@@ -10,6 +10,8 @@
           <include name="configAC"/>
           <include name="configAS"/>
           <include name="createOrgTest"/>
+          <include name="createOrgwithIndus"/>
+          <include name="createOrgWithPhoneNumberTest"/>
           <include name="configBM"/>
           <include name="configAM"/>
         </methods>

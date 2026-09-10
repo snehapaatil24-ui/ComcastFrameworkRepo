@@ -27,7 +27,7 @@ public class ExcelUtility {
 	{
 		FileInputStream fis= new FileInputStream ("./TestData/TestSriptData.xlsx");
 		Workbook wb= WorkbookFactory.create(fis);
-wb.getSheet(sheetName).getRow(rowNum).createCell(cellNum);
+ wb.getSheet(sheetName).getRow(rowNum).createCell(cellNum).setCellValue(data);
 
 FileOutputStream fos= new FileOutputStream("./TestData/TestSriptData.xlsx");
 wb.write(fos);

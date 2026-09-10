@@ -65,7 +65,9 @@ public class BaseClass {
 
 	{
 		System.out.println("Launch the browser");
-		String BROWSER = browser;
+		String BROWSER= System.getProperty("browser", flib.getDataFromPropertiesFile("browser"));
+		
+		//String BROWSER = browser;
 
 		// flib.getDataFromPropertiesFile("BROWSER");
 
@@ -89,9 +91,13 @@ public class BaseClass {
 	// (groups= {"SmokeTest", "RegressionTest"})
 	public void configBM() throws Throwable {
 		System.out.println("Login");
-		String URL = flib.getDataFromPropertiesFile("URL");
-		String USERNAME = flib.getDataFromPropertiesFile("USERNAME");
-		String PASSWORD = flib.getDataFromPropertiesFile("PASSWORD");
+		String URL= System.getProperty("url", flib.getDataFromPropertiesFile("URL"));
+	String USERNAME= System.getProperty("username", flib.getDataFromPropertiesFile("USERNAME"));
+		String PASSWORD= System.getProperty("password",flib.getDataFromPropertiesFile("PASSWORD"));
+		
+		//String URL = flib.getDataFromPropertiesFile("URL");
+	//String USERNAME = flib.getDataFromPropertiesFile("USERNAME");
+	//String PASSWORD = flib.getDataFromPropertiesFile("PASSWORD");
 
 		LoginPage lp = new LoginPage(driver);
 		lp.loginToapp(URL, USERNAME, PASSWORD);

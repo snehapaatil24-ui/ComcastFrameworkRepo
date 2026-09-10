@@ -41,9 +41,9 @@ public class LoginPage extends WebDriverUtility {  //Rule-1 create a separate ja
 	
 	//Rule-5 provide Action
 	
-	public void loginToapp(String URL, String USERNAME, String PASSWORD ) {
+	public void loginToapp(String NURL, String USERNAME, String PASSWORD ) {
 		waitForPageToLoad(driver);
-		driver.get(URL);
+		driver.get(NURL);
 		usernameEdt.sendKeys(USERNAME);
 		passwordEdt.sendKeys(PASSWORD);
 		loginBtn.click();
